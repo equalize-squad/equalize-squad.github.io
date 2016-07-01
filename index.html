@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/jquery.easy-pie-chart.css">
     <link rel="stylesheet" href="css/styles.css" title="mainStyle">
+    <link rel="stylesheet" href="css/contact.css">
 
     <!-- REVOLUTION BANNER CSS SETTINGS -->
     <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
@@ -544,25 +545,29 @@
                           </div>
                       </div>
                       <div class="col-md-6">
-                          <form>
+                          <form id="contact_form">
                               <div class="form-group has-feedback left">
-                                  <input type="text" class="form-control" placeholder="Empresa">
+                                  <input id="contact_company" name="contact[company]" type="text" class="form-control" placeholder="Empresa" required>
                                   <i class="fa fa-users form-control-feedback"></i>
                               </div>
                               <div class="form-group has-feedback left">
-                                  <input type="text" class="form-control" placeholder="Nome">
+                                  <input id="contact_name" name="contact[name]" type="text" class="form-control" placeholder="Nome" required>
                                   <i class="fa fa-user form-control-feedback"></i>
                               </div>
                               <div class="form-group has-feedback left">
-                                  <input type="email" class="form-control" placeholder="Email">
+                                  <input id="contact_email" name="contact[email]" type="email" class="form-control" placeholder="Email" required>
                                   <i class="fa fa-envelope-o form-control-feedback"></i>
                               </div>
                               <div class="form-group has-feedback left">
-                                  <textarea class="form-control" rows="7" placeholder="Mensagem"></textarea>
+                                  <textarea  id="contact_message" name="contact[message]" class="form-control" rows="7" placeholder="Mensagem" required></textarea>
                                   <i class="fa fa-pencil-square-o form-control-feedback"></i>
                               </div>
                               <button class="btn btn-primary btn-lg pull-right" type="submit">ENVIAR</button>
                           </form>
+                          <div id="thank_you_message" class="section-heading hide">
+                              <h3>Muito obrigado pelo interesse!</h3>
+                              <h3>Entraremos em contato o mais rápido possível!</h3>
+                          </div>
                       </div>
                   </div>
               </div>
@@ -781,6 +786,7 @@
 
       <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
       <script src="js/script.js"></script>
+      <script src="js/contact.js"></script>
 
       <script>
         $(document).ready(function() {

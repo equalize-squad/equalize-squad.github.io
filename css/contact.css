@@ -1,0 +1,7 @@
+.has-error .form-control-feedback {
+    top: 32px !important;
+}
+
+.has-error .control-label {
+    text-transform: capitalize;
+}
