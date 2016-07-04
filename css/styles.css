@@ -1419,3 +1419,13 @@ canvas {
   background: #555555;
   border-color: #555555;
 }
+
+@media(min-width: 768px) {
+    div.col-md-7.five-three {
+      width: 60% !important;
+    }
+
+    div.col-md-5.five-two {
+      width: 40% !important;
+    }
+}
