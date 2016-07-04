@@ -88,7 +88,7 @@ var appMaster = {
         var revapi;
         revapi = jQuery('.tp-banner').revolution(
         {
-            delay: 7000,
+            delay: 3000,
             startwidth: 1170,
             startheight: docHeight,
             hideThumbs: 10,
@@ -341,16 +341,16 @@ var appMaster = {
         });
         $('.theme-switcher .colors a').on('click', function(){
             var ThisColor = $(this).attr('class');
-            switch(ThisColor){
-                case 'blue':
-                    Theme.blueConfig();
-                    break;
-                case 'orange':
-                    Theme.orangeConfig();
-                    break;
-                case 'red':
-                    Theme.redConfig();
-                    break;
+            switch(ThisColor) {
+              case 'blue':
+                Theme.blueConfig();
+                break;
+              case 'orange':
+                Theme.orangeConfig();
+                break;
+              case 'red':
+                Theme.redConfig();
+                break;
             }
         });
     },
