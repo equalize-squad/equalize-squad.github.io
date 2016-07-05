@@ -9,22 +9,22 @@
 
 var Theme = {
   blueConfig: function(){
-      $('link[title=mainStyle]').attr('href', 'css/styles-blue.css');
-      $('.navbar-brand img').attr('src','img/logo-blue.png');
-      $('img.ipad-image').attr('src','img/samples/ipad-bl.png');
-      $('img.macbook-image').attr('src','img/samples/macbook-bl.png');
+    $('link[title=mainStyle]').attr('href', 'css/styles-blue.css');
+    $('.navbar-brand img').attr('src','img/logo-blue.png');
+    $('img.ipad-image').attr('src','img/samples/ipad-bl.png');
+    $('img.macbook-image').attr('src','img/samples/macbook-bl.png');
   },
   orangeConfig: function(){
-      $('link[title=mainStyle]').attr('href', 'css/styles-orange.css');
-      $('.navbar-brand img').attr('src','img/logo-orange.png');
-      $('img.ipad-image').attr('src','img/samples/ipad-bl.png');
-      $('img.macbook-image').attr('src','img/samples/macbook-bl.png');
+    $('link[title=mainStyle]').attr('href', 'css/styles-orange.css');
+    $('.navbar-brand img').attr('src','img/logo-orange.png');
+    $('img.ipad-image').attr('src','img/samples/ipad-bl.png');
+    $('img.macbook-image').attr('src','img/samples/macbook-bl.png');
   },
   redConfig: function(){
-      $('link[title=mainStyle]').attr('href', 'css/styles-red.css');
-      $('.navbar-brand img').attr('src','img/logo-red.png');
-      $('img.ipad-image').attr('src','img/samples/ipad-rd.png');
-      $('img.macbook-image').attr('src','img/samples/macbook-rd.png');
+    $('link[title=mainStyle]').attr('href', 'css/styles-red.css');
+    $('.navbar-brand img').attr('src','img/logo-red.png');
+    $('img.ipad-image').attr('src','img/samples/ipad-rd.png');
+    $('img.macbook-image').attr('src','img/samples/macbook-rd.png');
   }
 }
 
@@ -59,9 +59,10 @@ var appMaster = {
         // Smooth Scrolling
         $('a[href*=#]:not([href=#carousel-example-generic], [href=#testimonials-carousel])').click(function() {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-
                 var target = $(this.hash);
+                console.log('target: ------->' + target);
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                console.log('target.target: ------->' + target);
                 if (target.length) {
                     $('html,body').animate({
                         scrollTop: target.offset().top
