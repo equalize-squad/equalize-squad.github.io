@@ -65,6 +65,10 @@ header.masthead .tp-caption .btn.btn-naked {
 header.masthead h1, header.masthead h2, header.masthead h3 {
   color: white;
 }
+header.masthead .segments {
+  color: white;
+  column-count: 2;
+}
 
 #wrap {
   padding-top: 70px;
