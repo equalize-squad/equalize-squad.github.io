@@ -1,6 +1,7 @@
 
 (function() {
-  var $contactForm = $('#contact_form');
+  var $contactForm = $('#contact_form'),
+    $message = $('#message');
 
   function showError(field, message) {
     var $field = $('#contact_'+field);
@@ -27,18 +28,20 @@
 
     $.ajax({
       beforeSend: function () {
-        $('.pre-loader').fadeIn('600');
+        $('#preloader').fadeIn(function() {$('#status').fadeIn();})
       },
       complete: function () {
-        $('.pre-loader').fadeOut();
+        $('#status').fadeOut(function () {
+          $('#preloader').delay(350).fadeOut('slow');
+        });
       },
       type: 'POST',
-      url: 'https://equalizei.herokuapp.com/contacts',
+      url: 'http://app.equalize.io/contacts',
       data: $(this).serialize()
     })
       .done(function() {
-        $contactForm.remove();
-        $('#thank_you_message').removeClass('hide');
+        $contactForm.slideUp('slow');
+        $message.slideDown('hide');
       })
       .fail(function(res) {
         var errors = res.responseJSON.errors;
