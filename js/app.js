@@ -36,6 +36,12 @@ $(function() {
 
         event.preventDefault();
     });
+
+  $('#testimonials').on('click', '.more', function(e) {
+    $(e.target).fadeOut('fast', function() {
+      $(this).parent().find('.details').fadeIn('fast');
+    });
+  });
 });
 /*-------------------------------------------------*/
 /* =  Full-window section

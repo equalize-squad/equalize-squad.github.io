@@ -656,7 +656,14 @@ a {
   margin: 10px auto;
 }
 
+.testimonial-box .details {
+  display: none;
+}
 
+.testimonial-box .more {
+  cursor: pointer;
+  color: #ff7f00 !important;
+}
 
 /* === Testimonials === */
 
