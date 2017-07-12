@@ -36,7 +36,7 @@
         });
       },
       type: 'POST',
-      url: 'http://app.equalize.io/contacts',
+      url: 'https://app.equalize.io/contacts',
       data: $(this).serialize()
     })
       .done(function() {
