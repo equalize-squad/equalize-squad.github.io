@@ -537,14 +537,17 @@
                         <form id="contact_form" class="contact-form">
                             <h4>Envie seus dados.</h4>
                             <div class="row">
-                                <div class="col-sm-4">
-                                    <input name="contact[company]" id="contact[company]" type="text" class="form-control" placeholder="Sua Empresa..." required>
+                                <div class="col-sm-3">
+                                    <input name="contact[company]" id="contact[company]" type="text" class="form-control" placeholder="Sua empresa..." required>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-sm-3">
                                     <input name="contact[name]" id="contact[name]" type="text" class="form-control" placeholder="Seu nome..." required>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-sm-3">
                                     <input name="contact[email]" id="contact[email]" type="email" class="form-control" placeholder="Seu e-mail..." required>
+                                </div>
+                                <div class="col-sm-3">
+                                    <input name="contact[phone_number]" id="contact[phone_number]" type="text" class="form-control" placeholder="Seu telefone..." data-plugin="mask" data-pattern="phone-number" data-country-code="BR">
                                 </div>
                             </div>
                             <div class="row">
@@ -683,6 +686,8 @@
         <script src="js/track.js"></script>
         <script src="js/app.js"></script>
         <script src="js/contact.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/mask.js"></script>
 
         <script type="text/javascript">
             jQuery(document).ready(function($) {
