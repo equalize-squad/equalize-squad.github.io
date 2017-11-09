@@ -169,7 +169,7 @@ a {
 
 /* Background images css */
 .bg-home {
-  background: url("../images/slider-bk.jpg");
+  background: url("../images/layer.jpg");
   background-size: cover;
   background-color: #222328;
   position: relative;
