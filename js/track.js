@@ -10,6 +10,8 @@
       email: $contacForm.find('[id="contact[email]"]').val(),
       message: $contacForm.find('[id="contact[message]"]').val()
     });
+
+    gtag_report_conversion();
   }
 
   $('#contact_form').on('submit', trackContact);
