@@ -1,5 +1,4 @@
 window.$ = window.jQuery = require('jquery');
-require("./ad-words-event.js");
 require('bootstrap');
 require("./jquery.sticky.js");
 require("./jquery.easing.1.3.min.js");
