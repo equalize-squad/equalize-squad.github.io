@@ -22,3 +22,10 @@ s {
     font-size: 80px;
     color: #ff7f00;
 }
+
+.bg-led-lamp {
+    background: url("../images/led-light.jpg");
+    background-size: cover;
+    background-color: #222328;
+    position: relative;
+}
