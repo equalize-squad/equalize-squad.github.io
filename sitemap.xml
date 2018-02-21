@@ -6,9 +6,22 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+
 <url>
   <loc>http://equalize.io/</loc>
-  <lastmod>2017-02-23T12:52:59+00:00</lastmod>
-  <changefreq>daily</changefreq>
+  <lastmod>2018-02-21T19:04:16+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
+<url>
+  <loc>http://equalize.io/certificacao-de-lampadas-led</loc>
+  <lastmod>2018-02-21T19:04:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://equalize.io/certificacao-de-panelas-metalicas</loc>
+  <lastmod>2018-02-21T19:04:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
 </urlset>
