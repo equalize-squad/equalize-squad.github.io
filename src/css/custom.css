@@ -29,3 +29,10 @@ s {
     background-color: #222328;
     position: relative;
 }
+
+.bg-metal-pan {
+    background: url("../images/metal-pan.jpg");
+    background-size: cover;
+    background-color: #222328;
+    position: relative;
+}
