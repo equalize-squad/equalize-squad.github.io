@@ -8,4 +8,3 @@ require("./track.js");
 require("./app.js");
 require("./contact.js");
 require("./mask.js");
-require("./drift.js");

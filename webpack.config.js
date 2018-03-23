@@ -4,7 +4,8 @@ const extractCSS = new ExtractTextPlugin('[name].bundle.css');
 module.exports = {
     entry: {
         "app.header": './src/js/app.header.js',
-        "app.bottom": './src/js/app.bottom.js'
+        "app.bottom": './src/js/app.bottom.js',
+        "app.integrations": './src/js/app.integrations.js'
     },
     output: {
         path: __dirname + '/',
