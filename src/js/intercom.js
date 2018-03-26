@@ -4,11 +4,8 @@
   s.src='https://widget.intercom.io/widget/' + APP_ID;
   var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}
 
-  $('#wish_to_certificate,#wish_to_certificate_btn').on('click', function(event) {
-    event.preventDefault();
-
-    window.Intercom('boot', {
-      app_id: APP_ID
-    });
+  window.Intercom('boot', {
+    app_id: APP_ID,
+    custom_launcher_selector: '#wish_to_certificate,#wish_to_certificate_btn,#wish_navbar,#wish'
   });
 })();
