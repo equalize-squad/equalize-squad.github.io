@@ -43,3 +43,10 @@ s {
     background-color: #222328;
     position: relative;
 }
+
+.bg-school-article {
+    background: url("../images/artigo-escolar.jpg");
+    background-size: cover;
+    background-color: #222328;
+    position: relative;
+}
