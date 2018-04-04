@@ -36,3 +36,10 @@ s {
     background-color: #222328;
     position: relative;
 }
+
+.bg-toy {
+    background: url("../images/brinquedo.jpg");
+    background-size: cover;
+    background-color: #222328;
+    position: relative;
+}
